@@ -35,8 +35,10 @@ def infer_and_visualize(model, image_path, mask_path, transform, device="cuda", 
   #axs[2].imshow(output, cmap='gray')
   axs[2].imshow(output)
   axs[2].set_title('Predicted Mask')
-  plt.show()
+  plt.tight_layout()
   plt.savefig(figname)
+  plt.show()
+  
 
 
 
